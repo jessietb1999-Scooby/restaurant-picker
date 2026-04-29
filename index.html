@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Picker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="app-container">
+    <div class="card" id="welcome-screen">
+      <h1>FATIMAH'S FOOD PICKER</h1>
+      <p>
+        Choose a food category.<br>
+        Pick a top restaurant.<br>
+        View the details.<br><br>
+        Retro mood. Anime flavor. Easy decisions. For you 
+      </p>
+      <div class="button-group">
+        <button id="start-btn">Start</button>
+      </div>
+    </div>
+
+    <div class="card hidden" id="food-screen">
+      <h2>Pick a Food</h2>
+      <div class="grid" id="food-options"></div>
+      <div class="bottom-buttons">
+        <button id="random-food-btn">Random Food</button>
+        <button id="back-to-welcome-btn">Back</button>
+      </div>
+    </div>
+
+    <div class="card hidden" id="restaurant-screen">
+      <h2 id="restaurant-title">Top 10 Places</h2>
+      <div class="grid" id="restaurant-options"></div>
+      <div class="bottom-buttons">
+        <button id="random-restaurant-btn">Random Restaurant</button>
+        <button id="back-to-food-btn">Back</button>
+      </div>
+    </div>
+
+    <div class="card hidden" id="details-screen">
+      <h2>Restaurant Details</h2>
+      <div class="details-box">
+        <p><strong>Name:</strong> <span id="detail-name"></span></p>
+        <p><strong>Website:</strong> <span id="detail-website"></span></p>
+        <p><strong>Address:</strong> <span id="detail-address"></span></p>
+        <p><strong>Rating:</strong> <span id="detail-rating"></span></p>
+        <p><strong>Phone:</strong> <span id="detail-phone"></span></p>
+        <p><strong>Price Range:</strong> <span id="detail-price"></span></p>
+      </div>
+      <div class="bottom-buttons">
+        <button id="back-to-restaurants-btn">Back to Places</button>
+        <button id="back-to-foods-btn">Back to Foods</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

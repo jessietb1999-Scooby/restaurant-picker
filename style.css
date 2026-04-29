@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  background: #120c24;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, #120c24, #241542),
+    repeating-linear-gradient(
+      to right,
+      rgba(255,255,255,0.04) 0px,
+      rgba(255,255,255,0.04) 1px,
+      transparent 1px,
+      transparent 8px
+    );
+  z-index: -1;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(43, 30, 86, 0.95);
+  border: 5px solid #ff66c4;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 102, 196, 0.25);
+  text-align: center;
+}
+
+h1, h2 {
+  color: #ff90d8;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+button {
+  background: #6840b8;
+  color: white;
+  border: 3px solid #ff66c4;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #8a5be0;
+  transform: translateY(-2px);
+}
+
+.bottom-buttons,
+.button-group {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.details-box {
+  text-align: left;
+  max-width: 600px;
+  margin: 30px auto 0;
+  background: rgba(20, 15, 40, 0.7);
+  border: 3px solid #79c8ff;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
